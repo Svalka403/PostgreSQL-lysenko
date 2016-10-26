@@ -29,7 +29,7 @@ namespace Client
                 ServerTB.Text, PortTB.Text, UsernameTB.Text, PasswordTB.Text, DBNameTB.Text);
             npgsqlConnection = new NpgsqlConnection(ConnectionString);
             npgsqlConnection.Open();
-            ConnectLabel.Text = "Подключено к серверу" + ServerTB.Text + PortTB.Text;
+            ConnectLabel.Text = String.Format("Подключено к серверу{0}:{1}", ServerTB.Text, PortTB.Text);
 
 
 
